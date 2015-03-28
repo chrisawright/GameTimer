@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB5419031AAA1B98006BAA65 /* EggTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5419021AAA1B98006BAA65 /* EggTimerView.swift */; };
+		EB8EA4911A94CC8200C6E6BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EA4901A94CC8200C6E6BE /* AppDelegate.swift */; };
+		EB8EA4931A94CC8200C6E6BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EA4921A94CC8200C6E6BE /* ViewController.swift */; };
+		EB8EA4961A94CC8200C6E6BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB8EA4941A94CC8200C6E6BE /* Main.storyboard */; };
+		EB8EA4981A94CC8200C6E6BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB8EA4971A94CC8200C6E6BE /* Images.xcassets */; };
+		EB8EA49B1A94CC8200C6E6BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB8EA4991A94CC8200C6E6BE /* LaunchScreen.xib */; };
+		EB8EA4A71A94CC8200C6E6BE /* GameTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8EA4A61A94CC8200C6E6BE /* GameTimerTests.swift */; };
+		EBDA88EB1A9CDF73003F510A /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDA88EA1A9CDF73003F510A /* Buttons.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB303FCB1A9F909B00274276 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB83D05E1A9F7B9A0082AFEB /* ButtonTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB83D0391A9F7B9A0082AFEB;
+			remoteInfo = ButtonTest;
+		};
+		EB303FCD1A9F909B00274276 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB83D05E1A9F7B9A0082AFEB /* ButtonTest.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB83D04E1A9F7B9A0082AFEB;
+			remoteInfo = ButtonTestTests;
+		};
+		EB8EA4A11A94CC8200C6E6BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB8EA4831A94CC8200C6E6BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB8EA48A1A94CC8200C6E6BE;
+			remoteInfo = GameTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EB5419021AAA1B98006BAA65 /* EggTimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EggTimerView.swift; sourceTree = "<group>"; };
+		EB83D05E1A9F7B9A0082AFEB /* ButtonTest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ButtonTest.xcodeproj; path = GameTimer/ButtonTest/ButtonTest.xcodeproj; sourceTree = "<group>"; };
+		EB8EA48B1A94CC8200C6E6BE /* GameTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8EA48F1A94CC8200C6E6BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB8EA4901A94CC8200C6E6BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB8EA4921A94CC8200C6E6BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EB8EA4951A94CC8200C6E6BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB8EA4971A94CC8200C6E6BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EB8EA49A1A94CC8200C6E6BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		EB8EA4A01A94CC8200C6E6BE /* GameTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB8EA4A51A94CC8200C6E6BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB8EA4A61A94CC8200C6E6BE /* GameTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimerTests.swift; sourceTree = "<group>"; };
+		EBDA88EA1A9CDF73003F510A /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB8EA4881A94CC8200C6E6BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB8EA49D1A94CC8200C6E6BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB303FC71A9F909B00274276 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB303FCC1A9F909B00274276 /* ButtonTest.app */,
+				EB303FCE1A9F909B00274276 /* ButtonTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB8EA4821A94CC8200C6E6BE = {
+			isa = PBXGroup;
+			children = (
+				EB8EA48D1A94CC8200C6E6BE /* GameTimer */,
+				EB8EA4A31A94CC8200C6E6BE /* GameTimerTests */,
+				EB8EA48C1A94CC8200C6E6BE /* Products */,
+				EB83D05E1A9F7B9A0082AFEB /* ButtonTest.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		EB8EA48C1A94CC8200C6E6BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB8EA48B1A94CC8200C6E6BE /* GameTimer.app */,
+				EB8EA4A01A94CC8200C6E6BE /* GameTimerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB8EA48D1A94CC8200C6E6BE /* GameTimer */ = {
+			isa = PBXGroup;
+			children = (
+				EB5419021AAA1B98006BAA65 /* EggTimerView.swift */,
+				EB8EA4901A94CC8200C6E6BE /* AppDelegate.swift */,
+				EBDA88EA1A9CDF73003F510A /* Buttons.swift */,
+				EB8EA4921A94CC8200C6E6BE /* ViewController.swift */,
+				EB8EA4941A94CC8200C6E6BE /* Main.storyboard */,
+				EB8EA4971A94CC8200C6E6BE /* Images.xcassets */,
+				EB8EA4991A94CC8200C6E6BE /* LaunchScreen.xib */,
+				EB8EA48E1A94CC8200C6E6BE /* Supporting Files */,
+			);
+			path = GameTimer;
+			sourceTree = "<group>";
+		};
+		EB8EA48E1A94CC8200C6E6BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB8EA48F1A94CC8200C6E6BE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB8EA4A31A94CC8200C6E6BE /* GameTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB8EA4A61A94CC8200C6E6BE /* GameTimerTests.swift */,
+				EB8EA4A41A94CC8200C6E6BE /* Supporting Files */,
+			);
+			path = GameTimerTests;
+			sourceTree = "<group>";
+		};
+		EB8EA4A41A94CC8200C6E6BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB8EA4A51A94CC8200C6E6BE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB8EA48A1A94CC8200C6E6BE /* GameTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB8EA4AA1A94CC8200C6E6BE /* Build configuration list for PBXNativeTarget "GameTimer" */;
+			buildPhases = (
+				EB8EA4871A94CC8200C6E6BE /* Sources */,
+				EB8EA4881A94CC8200C6E6BE /* Frameworks */,
+				EB8EA4891A94CC8200C6E6BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameTimer;
+			productName = GameTimer;
+			productReference = EB8EA48B1A94CC8200C6E6BE /* GameTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB8EA49F1A94CC8200C6E6BE /* GameTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB8EA4AD1A94CC8200C6E6BE /* Build configuration list for PBXNativeTarget "GameTimerTests" */;
+			buildPhases = (
+				EB8EA49C1A94CC8200C6E6BE /* Sources */,
+				EB8EA49D1A94CC8200C6E6BE /* Frameworks */,
+				EB8EA49E1A94CC8200C6E6BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB8EA4A21A94CC8200C6E6BE /* PBXTargetDependency */,
+			);
+			name = GameTimerTests;
+			productName = GameTimerTests;
+			productReference = EB8EA4A01A94CC8200C6E6BE /* GameTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB8EA4831A94CC8200C6E6BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = borusoft;
+				TargetAttributes = {
+					EB8EA48A1A94CC8200C6E6BE = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = NMS255663W;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+						};
+					};
+					EB8EA49F1A94CC8200C6E6BE = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = EB8EA48A1A94CC8200C6E6BE;
+					};
+				};
+			};
+			buildConfigurationList = EB8EA4861A94CC8200C6E6BE /* Build configuration list for PBXProject "GameTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB8EA4821A94CC8200C6E6BE;
+			productRefGroup = EB8EA48C1A94CC8200C6E6BE /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EB303FC71A9F909B00274276 /* Products */;
+					ProjectRef = EB83D05E1A9F7B9A0082AFEB /* ButtonTest.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				EB8EA48A1A94CC8200C6E6BE /* GameTimer */,
+				EB8EA49F1A94CC8200C6E6BE /* GameTimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EB303FCC1A9F909B00274276 /* ButtonTest.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ButtonTest.app;
+			remoteRef = EB303FCB1A9F909B00274276 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EB303FCE1A9F909B00274276 /* ButtonTestTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ButtonTestTests.xctest;
+			remoteRef = EB303FCD1A9F909B00274276 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB8EA4891A94CC8200C6E6BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB8EA4961A94CC8200C6E6BE /* Main.storyboard in Resources */,
+				EB8EA49B1A94CC8200C6E6BE /* LaunchScreen.xib in Resources */,
+				EB8EA4981A94CC8200C6E6BE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB8EA49E1A94CC8200C6E6BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB8EA4871A94CC8200C6E6BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB5419031AAA1B98006BAA65 /* EggTimerView.swift in Sources */,
+				EB8EA4931A94CC8200C6E6BE /* ViewController.swift in Sources */,
+				EBDA88EB1A9CDF73003F510A /* Buttons.swift in Sources */,
+				EB8EA4911A94CC8200C6E6BE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB8EA49C1A94CC8200C6E6BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB8EA4A71A94CC8200C6E6BE /* GameTimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB8EA4A21A94CC8200C6E6BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB8EA48A1A94CC8200C6E6BE /* GameTimer */;
+			targetProxy = EB8EA4A11A94CC8200C6E6BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB8EA4941A94CC8200C6E6BE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB8EA4951A94CC8200C6E6BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB8EA4991A94CC8200C6E6BE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB8EA49A1A94CC8200C6E6BE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB8EA4A81A94CC8200C6E6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chris Wright (4CQ8XBSY2U)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB8EA4A91A94CC8200C6E6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chris Wright (4CQ8XBSY2U)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB8EA4AB1A94CC8200C6E6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Chris Wright (4CQ8XBSY2U)";
+				INFOPLIST_FILE = GameTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5b5811a7-c7b1-4a72-b3d3-f648a21676e8";
+			};
+			name = Debug;
+		};
+		EB8EA4AC1A94CC8200C6E6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				INFOPLIST_FILE = GameTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5b5811a7-c7b1-4a72-b3d3-f648a21676e8";
+			};
+			name = Release;
+		};
+		EB8EA4AE1A94CC8200C6E6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GameTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameTimer.app/GameTimer";
+			};
+			name = Debug;
+		};
+		EB8EA4AF1A94CC8200C6E6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GameTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GameTimer.app/GameTimer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB8EA4861A94CC8200C6E6BE /* Build configuration list for PBXProject "GameTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB8EA4A81A94CC8200C6E6BE /* Debug */,
+				EB8EA4A91A94CC8200C6E6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB8EA4AA1A94CC8200C6E6BE /* Build configuration list for PBXNativeTarget "GameTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB8EA4AB1A94CC8200C6E6BE /* Debug */,
+				EB8EA4AC1A94CC8200C6E6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB8EA4AD1A94CC8200C6E6BE /* Build configuration list for PBXNativeTarget "GameTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB8EA4AE1A94CC8200C6E6BE /* Debug */,
+				EB8EA4AF1A94CC8200C6E6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB8EA4831A94CC8200C6E6BE /* Project object */;
+}
