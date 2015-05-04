@@ -15,17 +15,9 @@ import Foundation
 @IBDesignable class MuteButton:UIButton
 {
 
-    var muted = false
-    var debug = false
+    var _muted = false
+    var _debug = false
 
-
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    override init()
-    {
-        super.init()
-        self.setTitle("", forState: UIControlState.Normal)
-    }
-    
     
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     override init(frame: CGRect)
@@ -46,9 +38,9 @@ import Foundation
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     func setMuted(newMuted:Bool)
     {
-        if newMuted != muted
+        if newMuted != _muted
         {
-            muted = newMuted
+            _muted = newMuted
             self.setNeedsDisplay();
         }
     }
@@ -57,9 +49,9 @@ import Foundation
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     func setDebug(newDebug:Bool)
     {
-        if newDebug != debug
+        if newDebug != _debug
         {
-            debug = newDebug
+            _debug = newDebug
             self.setNeedsDisplay();
         }
     }
@@ -100,7 +92,7 @@ import Foundation
         CGContextSetLineWidth(graphicsContext, 2)
         CGContextSetLineCap(graphicsContext, kCGLineCapRound)
         
-        if (muted)
+        if (_muted)
         {
             UIColor.lightGrayColor().set()
         }
@@ -145,7 +137,7 @@ import Foundation
         
         
         // Muted - draw the X over it
-        if (muted)
+        if (_muted)
         {
             UIColor.darkGrayColor().set()
             let xSize = size * 0.35;
@@ -162,7 +154,7 @@ import Foundation
 
 
         // Debug - Draw the center
-        if (debug)
+        if (_debug)
         {
             CGContextAddArc(graphicsContext, CGFloat(center.x), CGFloat(center.y), 2, 0, CGFloat(M_PI) * 2.0, 0)
             UIColor(red:1, green:0.25, blue:0.25, alpha:1.0).set()
@@ -184,15 +176,7 @@ import Foundation
 @IBDesignable class RestartButton:UIButton
 {
     
-    var string = "99:99"
-    
-    
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    override init()
-    {
-        super.init()
-        self.setTitle("", forState: UIControlState.Normal)
-    }
+    var _string = "99:99"
     
     
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -213,9 +197,9 @@ import Foundation
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     func setString(newString:String)
     {
-        if newString != string
+        if newString != _string
         {
-            string = newString
+            _string = newString
             self.setNeedsDisplay();
         }
     }
@@ -285,7 +269,7 @@ import Foundation
             NSForegroundColorAttributeName : UIColor.darkGrayColor()
         ]
         
-        let textSize = string.sizeWithAttributes(textAttributes)
+        let textSize = _string.sizeWithAttributes(textAttributes)
         
         
         let textOrigin = CGPoint(x:bounds.midX - textSize.width/2, y:bounds.midY - textSize.height/2);
@@ -300,7 +284,7 @@ import Foundation
         //println(__FUNCTION__ + "textOrigin=\(textOrigin)")
         
 
-        let stringNS:NSString = self.string as NSString
+        let stringNS:NSString = self._string as NSString
         stringNS.drawAtPoint(textOrigin, withAttributes: textAttributes)
         
         
@@ -346,19 +330,11 @@ import Foundation
 @IBDesignable class MainButton:UIButton
 {
     
-    var time = "XX:XX.X"
-    var status = "status"
-    var hint = "hint hint hint hint"
-    var debug = false
-    var displayHMS = false
-    
-    
-    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    //override init()
-    //{
-    //    super.init()
-    //    self.setTitle("", forState: UIControlState.Normal)
-    //}
+    var _time = "XX:XX.X"
+    var _status = "status"
+    var _hint = "hint hint hint hint"
+    var _debug = false
+    var _displayHMS = false
     
     
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -379,9 +355,9 @@ import Foundation
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     func setTime(newTime:String)
     {
-        if newTime != time
+        if newTime != _time
         {
-            time = newTime
+            _time = newTime
             self.setNeedsDisplay();
         }
     }
@@ -390,9 +366,9 @@ import Foundation
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     func setStatus(newStatus:String)
     {
-        if newStatus != status
+        if newStatus != _status
         {
-            status = newStatus
+            _status = newStatus
             self.setNeedsDisplay();
         }
     }
@@ -401,9 +377,9 @@ import Foundation
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     func setHint(newHint:String)
     {
-        if newHint != hint
+        if newHint != _hint
         {
-            hint = newHint
+            _hint = newHint
             self.setNeedsDisplay();
         }
     }
@@ -412,9 +388,9 @@ import Foundation
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     func setDisplayHMS(newDisplayHMS:Bool)
     {
-        if newDisplayHMS != displayHMS
+        if newDisplayHMS != _displayHMS
         {
-            displayHMS = newDisplayHMS
+            _displayHMS = newDisplayHMS
             self.setNeedsDisplay();
         }
     }
@@ -423,9 +399,9 @@ import Foundation
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     func setDebug(newDebug:Bool)
     {
-        if newDebug != debug
+        if newDebug != _debug
         {
-            debug = newDebug
+            _debug = newDebug
             self.setNeedsDisplay();
         }
     }
@@ -445,7 +421,7 @@ import Foundation
         super.drawRect(rect)
 
         // Debug - draw bounds
-        if (debug)
+        if (_debug)
         {
             ("w=\(self.bounds.size.width)  h=\(self.bounds.size.height)" as NSString).drawAtPoint(self.bounds.origin, withAttributes: nil)
         }
@@ -473,12 +449,12 @@ import Foundation
             NSForegroundColorAttributeName : UIColor.darkGrayColor()
         ]
         
-        let textSizeTime = time.sizeWithAttributes(textAttributesTime)
+        let textSizeTime = _time.sizeWithAttributes(textAttributesTime)
         
         
         let textOriginTime = CGPoint(x:bounds.midX - textSizeTime.width/2, y:bounds.midY - textSizeTime.height/2)
         
-        let timeNS:NSString = self.time as NSString
+        let timeNS:NSString = self._time as NSString
         timeNS.drawAtPoint(textOriginTime, withAttributes: textAttributesTime)
         
         
@@ -490,23 +466,23 @@ import Foundation
             NSForegroundColorAttributeName : UIColor.darkGrayColor()
         ]
         
-        let textSizeStatus = status.sizeWithAttributes(textAttributesStatus)
+        let textSizeStatus = _status.sizeWithAttributes(textAttributesStatus)
         
         
         let textOriginStatus = CGPoint(x:bounds.midX - textSizeStatus.width/2, y:bounds.minY + bounds.height/4 - textSizeStatus.height/2)
             
-        if (displayHMS)
+        if (_displayHMS)
         {
             let HMS = "min sec"
             (HMS as NSString).drawAtPoint(CGPointMake(textOriginTime.x, textOriginTime.y - textSizeTime.height), withAttributes: textAttributesTime)
         }
         else
         {
-            let statusNS:NSString = self.status as NSString
+            let statusNS:NSString = self._status as NSString
             statusNS.drawAtPoint(textOriginStatus, withAttributes: textAttributesStatus)
             
             // Background box for the status text
-            if (debug)
+            if (_debug)
             {
                 var textRect = CGRect(x:textOriginStatus.x, y:textOriginStatus.y, width:textSizeStatus.width, height:textSizeStatus.height)
                 
@@ -544,12 +520,12 @@ import Foundation
             NSForegroundColorAttributeName : UIColor.darkGrayColor()
         ]
         
-        let textSizeHint = hint.sizeWithAttributes(textAttributesHint)
+        let textSizeHint = _hint.sizeWithAttributes(textAttributesHint)
         
         
         let textOriginHint = CGPoint(x:bounds.midX - textSizeHint.width/2, y:bounds.maxY - bounds.height/8 - textSizeHint.height/2)
         
-        let hintNS:NSString = self.hint as NSString
+        let hintNS:NSString = self._hint as NSString
         hintNS.drawAtPoint(textOriginHint, withAttributes: textAttributesHint)
         
         //println(__FUNCTION__ + " drawing status=\(status) of size \(timeSizeStatus) at (\(textOriginStatus.x),\(textOriginStatus.y)")
@@ -560,7 +536,7 @@ import Foundation
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*@IBDesignable*/ class SettingsButton:UIButton
+@IBDesignable class SettingsButton:UIButton
 {
     
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
